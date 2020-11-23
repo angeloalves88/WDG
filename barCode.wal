@@ -1,0 +1,24 @@
+ÇdefVar --name lista --type DataTable
+defVar --name code --type String
+defVar --name type --type String
+defVar --name success --type Boolean
+onError --executenext 
+getBarcode --sourcetype "Image" --image "C:\\Users\\angelo.alves\\Downloads\\barcode.png" --format "AZTEC" lista=table code=code type=type success=success
+getBarcode --sourcetype "Image" --image "C:\\Users\\angelo.alves\\Downloads\\barcode.png" --format "CODABAR" lista=table code=code type=type success=success
+getBarcode --sourcetype "Image" --image "C:\\Users\\angelo.alves\\Downloads\\barcode.png" --format "CODE_39" lista=table code=code type=type success=success
+getBarcode --sourcetype "Image" --image "C:\\Users\\angelo.alves\\Downloads\\barcode.png" --format "DATA_MATRIX" lista=table code=code type=type success=success
+getBarcode --sourcetype "Image" --image "C:\\Users\\angelo.alves\\Downloads\\barcode.png" --format "EAN_8" lista=table code=code type=type success=success
+getBarcode --sourcetype "Image" --image "C:\\Users\\angelo.alves\\Downloads\\barcode.png" --format "EAN_13" lista=table code=code type=type success=success
+getBarcode --sourcetype "Image" --image "C:\\Users\\angelo.alves\\Downloads\\barcode.png" --format "ITF" lista=table code=code type=type success=success
+getBarcode --sourcetype "Image" --image "C:\\Users\\angelo.alves\\Downloads\\barcode.png" --format "MAXICODE" lista=table code=code type=type success=success
+getBarcode --sourcetype "Image" --image "C:\\Users\\angelo.alves\\Downloads\\barcode.png" --format "PDF_417" lista=table code=code type=type success=success
+getBarcode --sourcetype "Image" --image "C:\\Users\\angelo.alves\\Downloads\\barcode.png" --format "RSS_14" lista=table code=code type=type success=success
+getBarcode --sourcetype "Image" --image "C:\\Users\\angelo.alves\\Downloads\\barcode.png" --format "RSS_EXPANDED" lista=table code=code type=type success=success
+getBarcode --sourcetype "Image" --image "C:\\Users\\angelo.alves\\Downloads\\barcode.png" --format "UPC_A" lista=table code=code type=type success=success
+getBarcode --sourcetype "Image" --image "C:\\Users\\angelo.alves\\Downloads\\barcode.png" --format "UPC_E" lista=table code=code type=type success=success
+getBarcode --sourcetype "Image" --image "C:\\Users\\angelo.alves\\Downloads\\barcode.png" --format "All_1D" lista=table code=code type=type success=success
+getBarcode --sourcetype "Image" --image "C:\\Users\\angelo.alves\\Downloads\\barcode.png" --format "UPC_EAN_EXTENSION" lista=table code=code type=type success=success
+getBarcode --sourcetype "Image" --image "C:\\Users\\angelo.alves\\Downloads\\barcode.png" --format "MSI" lista=table code=code type=type success=success
+getBarcode --sourcetype "Image" --image "C:\\Users\\angelo.alves\\Downloads\\barcode.png" --format "PLESSEY" lista=table code=code type=type success=success
+getBarcode --sourcetype "Image" --image "C:\\Users\\angelo.alves\\Downloads\\barcode.png" --format "IMB" lista=table code=code type=type success=success
+return*	19.12.1.00‚
