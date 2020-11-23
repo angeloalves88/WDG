@@ -1,0 +1,12 @@
+∏defVar --name resultado --type String
+defVar --name v1 --type Numeric --parameter 
+defVar --name v2 --type Numeric
+defVar --name v3 --type Numeric
+defVar --name retorno --type String --output 
+defVar --name sucesso --type Boolean
+defVar --name response --type String
+
+generateRandomNumber --minimum 1111 --maximum 9000 v2=value
+generateRandomNumber --minimum 1111 --maximum 9000 v3=value
+
+rScript --script "# Desvio Padr√£o\r\n\r\nresultado = 0\r\nx <- c(${v1},${v2},${v3})\r\nresultado <- sd(x)\r\nresultado <- round(resultado);\r\n${resultado} <- resultado\r\n\r\nif (resultado %% 2 == 0) {\r\n  result <- 0\r\n} else {\r\n  result <- 1\r\n}\r\nprint(result)\r\n${retorno} <- result"*	19.12.1.0

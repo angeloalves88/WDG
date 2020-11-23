@@ -1,8 +1,9 @@
-ÇdefVar --name lista --type DataTable
+ãdefVar --name lista --type DataTable
 defVar --name code --type String
 defVar --name type --type String
 defVar --name success --type Boolean
 onError --executenext 
+getBarcode --sourcetype "Image" --image "C:\\Users\\angelo.alves\\Downloads\\barcode.png" --format "AZTEC" lista=table code=code type=type success=success
 getBarcode --sourcetype "Image" --image "C:\\Users\\angelo.alves\\Downloads\\barcode.png" --format "AZTEC" lista=table code=code type=type success=success
 getBarcode --sourcetype "Image" --image "C:\\Users\\angelo.alves\\Downloads\\barcode.png" --format "CODABAR" lista=table code=code type=type success=success
 getBarcode --sourcetype "Image" --image "C:\\Users\\angelo.alves\\Downloads\\barcode.png" --format "CODE_39" lista=table code=code type=type success=success
@@ -21,4 +22,4 @@ getBarcode --sourcetype "Image" --image "C:\\Users\\angelo.alves\\Downloads\\bar
 getBarcode --sourcetype "Image" --image "C:\\Users\\angelo.alves\\Downloads\\barcode.png" --format "MSI" lista=table code=code type=type success=success
 getBarcode --sourcetype "Image" --image "C:\\Users\\angelo.alves\\Downloads\\barcode.png" --format "PLESSEY" lista=table code=code type=type success=success
 getBarcode --sourcetype "Image" --image "C:\\Users\\angelo.alves\\Downloads\\barcode.png" --format "IMB" lista=table code=code type=type success=success
-return*	19.12.1.00‚
+return*	20.10.4.0
